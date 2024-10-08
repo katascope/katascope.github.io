@@ -1,100 +1,101 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+
+<head>
+  <title>Katascope Visuals - Projects</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
 <body>
-<h1>Robotic Bench Project</h1>
-  <hr>
-  <p>An inexpensive triple robot GCODE-based fabrication and computer vision system using RAMPS hardware, extruded aluminum framing, and 3d printing.</p>
-  
-  <img src="FrontView.png">
-  <img src="AutoDetect.png">
-  <br>
-  
-  <H2>Youtube videos of bench in action</H2>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/3oB6Vd9nbw4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/UaXkqRvmAkw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <br>
-  
-  <H2>Fabricator</H2>
-  <img src="PicFabber.png">
-  <img src="FabricatorCloseup.png">
-  <br>
-  The Fabber is a modular 3-axis robotic system. Various toolheads may be attached such as a CNC laser, pen, paste extruder, filament extruder, or motorized spindle.
-  <br>
-  
-  <H2>Robot Arm</H2>
-  <img src="PicArm.png">
-  <a href="https://www.thingiverse.com/thing:2861357"><img src="ServoSuction.png"></a>
-  <a href="https://www.thingiverse.com/thing:2862751"><img src="SuctionMount.png"></a><br>
-  <p>Thingiverse Links</p>
-  <ul>
-    <li><a href="https://www.thingiverse.com/thing:2861357">Servo-Driven Suction Vacuum</a></li>
-    <li><a href="https://www.thingiverse.com/thing:2862751">Arm Suction Mount</a</li>
-    <li><a href="https://www.thingiverse.com/thing:1718984">Robot Arm Design</a></li>
-    <li><a href="https://www.thingiverse.com/thing:2040526">Limit-Switch additions</a></li>
-  </ul>
-    
-  <H2>Gantry Robot</H2>
-  <img src="PicGantry.png"><BR>
-  
-  <H2>Vision System</H2>
-  <ul>
-    <li><a href="https://docs.opencv.org/3.4.0/d5/dae/tutorial_aruco_detection.html">ARUCO tags</A></li>
-    <li><a href="http://www.emgu.com/">EMGU C# wrapper for OpenCV</A></li>
-  </ul>
-  
-<H2>RAMPS system</H2>
-  The RepRap Arduino Mega Pololu Shield (RAMPS) shield attaches to an Arduino mega to enable stepper motor, limit-switch, servo, and other controls. Traditionally the RAMPS shield is used to build 3d-printers but is easily extendable to other projects.<br>
-  <ul>
-    <li><a href="http://reprap.org/wiki/RAMPS_1.4">RAMPS board</a></li>
-    <li><a href="https://www.thingiverse.com/thing:1310530">RAMPS case</a></li>
-    <li><a href="https://github.com/olikraus/u8glib">U8GLIB</a></li>
-  </ul>
-    
-  <H2>Tensorflow Inception-Model for Tool Recognition</H2>
-  <H3>Tensorflow Inception training</H3>
-  <img src="TrainingScrewdrivers.png">
-  <br>
-  <ul>
-    <li><a href="https://www.tensorflow.org/tutorials/image_retraining">Retraining custom Inception convnets</a></li>
-    <li><a href="https://github.com/migueldeicaza/TensorFlowSharp">TensorFlowSharp C# Tensorflow bindings</a></li>
-  </ul>
-  
-  
-<H2>Construction progress<H2>
-<H3>Bench</H3>
-<img src="BenchConstruction1.png">
-<img src="BenchConstruction2.png">
-<img src="BenchConstruction3.png">
-<br>
-  
-<H3>Development progress pic of software<H3>
-<img src="DevShot1.png">
-<BR>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Katascope<span class="logo_colour">Visuals</span></a></h1>
+          <h2>Code. Graphics. 3d-Printing. Robots.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <!-- <li><a href="index.html">Home</a></li> -->
+          <li class="selected"><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>Latest News</h3>
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="https://github.com/katascope/glyphics">Github Glyphics</a></li>
+          <li><a href="https://www.thingiverse.com/katascope/designs">Thingiverse Designs</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.katascope.camamual">camamual game</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Projects</h1>
+ <table style="width:100%">
+  <tr>
+    <th>Image</th>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
 
-<H3>Test camera rig</H3>
-<img src="TestCam.png"><img src="ArucoMap.png"><BR>
-  The computer vision system uses a simple overhead webcam, OpenCV, and Tensorflow.. with a little custom image processing code. 
-  For basic development and testing a test rig was created for writing the integration code. This eased development and had the added benefit of having different distances and lighting conditions which helped the robustness of the final system installed to the bench.
-<BR>
 
-<H3>Print plate construction</H3>
-<img src="Plate1.png">
-<img src="Plate2.png">
-<BR>
-<H3>Maxwell Kinematic Coupler</H3>
-<img src="MaxwellKinematicCoupler.png">
-The Maxwell Kinematic Coupling helps ensure proper seating of the plates into the fabricator by the robot arm. It also prevents motion during the engraving process.<br>
- Maxwell Kinematic Coupling: https://en.wikipedia.org/wiki/Kinematic_coupling<br>
+<tr> <td><a href="projects/ChelanWatch.png"><img src="projects/ChelanWatch_thumb.png"></a>                  <td> Chelan Watch                                                                                                             <td> Integration of 3d-printing, laser-engraving, horology, chainmail                                                                                                   </tr>
+<tr> <td><a href="projects/LaserTurrets.png"><img src="projects/LaserTurrets_thumb.png"></a>                 <td> Laser Turrets                                                                                                            <td> Quad laser turrets with arduino based sequence programming                                                                                                         </tr>
+<tr> <td><a href="projects/LeDragon.png"><img src="projects/LeDragon_thumb.png"></a>                     <td> <a href="https://github.com/katascope/DragonLight">DragonLight</a>                                                                  <td> Live music-reactive LED strip driver for Luminata festival in Fremont, Seattle                                                                                     </tr>
+<tr> <td><a href="projects/FollowCam.png"><img src="projects/FollowCam_thumb.png"></a>                 <td> Follow Cam                                                                                                           <td> nVidia Jetson based camera+servos with Machine Learning for automatically following ballroom dancers                                                                                                        </tr>
+<tr> <td><a href="projects/PunchyLaptop.png"><img src="projects/PunchyLaptop_thumb.png"></a>                 <td> Punchy Laptop                                                                                                            <td> Testbase for Mree & Pree                                                                                                                                           </tr>
+<tr> <td><a href="projects/MreeAndPree.png"><img src="projects/MreeAndPree_thumb.png"></a>                  <td> Mree and Pree                                                                                                            <td> Pair of quadruped nVidia jetson based robots                                                                                                                       </tr>
+<tr> <td><a href="projects/Lightsuits.png"><img src="projects/Lightsuits_thumb.png"></a>                   <td> <a href="https://github.com/katascope/Lightsuit">Lightsuit</a>                                                                      <td> Set of lightsuits for ballroom dancing                                                                                                                             </tr>
+<tr> <td><a href="projects/SelfCleaningDesk.png"><img src="projects/SelfCleaningDesk_thumb.png"></a> <td> <a href="Self-Cleaning-Desk/index.html">Self-Cleaning Desk</a>                                                                       <td> Arduino, GCode, Tensorflow, C# based self-cleaning desk                                                                                                            </tr>
+<tr> <td><a href="Projects/Scarab.jpg"><img src="projects/Scarab_thumb.jpg"></a>                     <td> Scarab                                                                                                                   <td> 3d-printed ROS based autonomous robot. Uses Raspberry PI, Arduino, Mecanum wheels, RAMPS board controlled stepper motors, camera, voice recognition, voice to text </tr>
+<tr> <td><a href="projects/camamual.png"><img src="projects/camamual_thumb.png"></a>                 <td> Camamual                                                                                                                 <td> Unity-based puzzle game                                                                                                                                            </tr>
+<tr> <td><a href="projects/RoboMill.png"><img src="projects/RoboMill_thumb.png"></a>                     <td> RoboMill                                                                                                                 <td> Robotic milling                                                                                                                                                    </tr>
+<tr> <td><a href="projects/MegaGrid.png"><img src="projects/MegaGrid_thumb.png"></a>                     <td> MegaGrid                                                                                                                 <td> Unity app for interactive Glyphics                                                                                                                                 </tr>
+<tr> <td><a href="projects/Grizzly.jpg"><img src="projects/Grizzly_thumb.jpg"></a>                      <td> Grizzly                                                                                                                  <td> Remote control wheelchair platform                                                                                                                                 </tr>
+<tr> <td><a href="projects/InvertedJoystick.jpg"><img src="projects/InvertedJoystick_thumb.jpg"></a>             <td> Inverted Joystick                                                                                                        <td> Control for wheelchair control                                                                                                                                     </tr>
+<tr> <td><a href="projects/BlackBear.jpg"><img src="projects/BlackBear_thumb.jpg"></a>                    <td> Black Bear                                                                                                               <td> Teleoperated robot arm                                                                                                                                             </tr>
+<tr> <td><a href="projects/FaceTracker.jpg"><img src="projects/FaceTracker_thumb.jpg"></a>                  <td> FaceTracker                                                                                                              <td> Face Tracking webcam                                                                                                                                               </tr>
+<tr> <td><a href="projects/BigCheeto.jpg"><img src="projects/BigCheeto_thumb.jpg"></a>                    <td> Big Cheeto                                                                                                               <td> Robot Control Hub                                                                                                                                                  </tr>
+<tr> <td><a href="projects/Glyphics.png"><img src="projects/Glyphics_thumb.png"></a>                     <td> Glyphics                                                                                                                 <td> 3d Rasterspace engine                                                                                                                                              </tr>
+<tr> <td><a href="projects/PortablePi.jpg"><img src="projects/PortablePi_thumb.jpg"></a>                   <td> Portable Pi                                                                                                              <td> Portable Raspberry Pi for retro-gaming                                                                                                                             </tr>
+<tr> <td><a href="projects/Virus.jpg"><img src="projects/Virus_thumb.jpg"></a>                        <td> Virus                                                                                                                    <td> Bluetooth controlled Hexapod                                                                                                                                       </tr>
+<tr> <td><a href="projects/Brontosaurus.jpg"><img src="projects/Brontosaurus_thumb.jpg"></a>                 <td> Brontosaurus                                                                                                             <td> Desktop robot arm                                                                                                                                                  </tr>
+<tr> <td><a href="projects/ENableArms.jpg"><img src="projects/ENableArms_thumb.jpg"></a>                   <td> E-Nable arms                                                                                                             <td> Prosthetic arms/hands - 3d printed                                                                                                                                 </tr>
+<tr> <td><a href="projects/ClawCopter.jpg"><img src="projects/ClawCopter_thumb.jpg"></a>                   <td> ClawCopter                                                                                                               <td> Claw controlling quadcopter                                                                                                                                        </tr>
+<tr> <td><a href="projects/BabyBear.jpg"><img src="projects/BabyBear_thumb.jpg"></a>                     <td> Baby Bear                                                                                                                <td> Sub-150 Quadcopter, 3d printed                                                                                                                                     </tr>
+<tr> <td><a href="projects/MamaBearFinished.jpg"><img src="projects/MamaBearFinished_thumb.jpg"></a>             <td> Mama Bear                                                                                                                <td> 250-class Quadcopter, 3d printed                                                                                                                                   </tr>
+<tr> <td><a href="projects/RattleSnake.png"><img src="projects/RattleSnake_thumb.png"></a>                  <td> RattleSnake                                                                                                              <td> game system                                                                                                                                                        </tr>
+<tr> <td><a href="Projects/GradEditWPF_Screenshot.png"><img src="projects/GradEditWPF_Screenshot_thumb.png"></a>       <td> <a href="https://www.codeproject.com/Articles/55727/A-Simple-Gradient-Editor-for-WPF-in-C">Simple Gradient Editor for WPF in C#</a> <td> Simple Gradient Editor for WPF in C#                                                                                                                               </tr>
+<tr> <td><a href="projects/Synner.png"><img src="projects/Synner_thumb.png"></a>                       <td> Synner                                                                                                                   <td> Visualizer                                                                                                                                                         </tr>
+<tr> <td><a href="projects/scadaVision.png"><img src="projects/scadaVision_thumb.png"></a>                  <td> scadaVision                                                                                                              <td> SCADA MMI Software                                                                                                                                                 </tr>
+<tr> <td><a href="projects/KataFX3.jpg"><img src="projects/KataFX3_thumb.jpg"></a>                      <td> KataFX 3                                                                                                                 <td> Visualizer for Winamp                                                                                                                                              </tr>
+<tr> <td><a href="projects/There.png"><img src="projects/There_thumb.png"></a>                        <td> There                                                                                                                    <td> Visualizer                                                                                                                                                         </tr>
+<tr> <td><a href="projects/KataFX2.jpg"><img src="projects/KataFX2_thumb.jpg"></a>                      <td> KataFX 2                                                                                                                 <td> Visualizer for Winamp                                                                                                                                              </tr>
+<tr> <td><a href="projects/MegaMinimal.jpg"><img src="projects/MegaMinimal_thumb.jpg"></a>                  <td> MegaMinimal                                                                                                              <td> Spectrum Analyzer for Winamp                                                                                                                                       </tr>
+<tr> <td><a href="projects/Mailler.png"><img src="projects/Mailler_thumb.png"></a>                      <td> Mailler                                                                                                                  <td> Chainmail editing software                                                                                                                                         </tr>
+<tr> <td><a href="projects/kataFX.png"><img src="projects/kataFX.png"></a>                       <td> KataFX 1                                                                                                                 <td> Visualizer for Winamp                                                                                                                                              </tr>
+<tr> <td><a href="projects/SideFX.png"><img src="projects/SideFX.png"></a>                       <td> SideFX                                                                                                                   <td> Concert Visuals Software                                                                                                                                           </tr>
 
-<BR>
-  
-  <H3>Autoclean Algorithm</H3>
-  <img src="Algorithm.png">
-  <br>
-  <H3>Project costs</H3>
-  <img src="Costs.png">
-  <br>
-  <br>
-  <a href="http://katascopevisuals.com/">Other projects</a><br>
+
+</table>
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="projects.html">Projects</a> | <a href="gallery.html">Gallery</a></p>
+      <p>Copyright &copy; Katascope Visuals | <a href="http://www.html5webtemplates.co.uk">design credits</a></p>
+    </div>
+  </div>
 </body>
 </html>

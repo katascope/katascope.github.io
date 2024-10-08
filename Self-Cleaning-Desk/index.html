@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Robotic Bench Project</h1>
+  <hr>
+  <p>An inexpensive triple robot GCODE-based fabrication and computer vision system using RAMPS hardware, extruded aluminum framing, and 3d printing.</p>
+  
+  <img src="FrontView.png">
+  <img src="AutoDetect.png">
+  <br>
+  
+  <H2>Youtube videos of bench in action</H2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/3oB6Vd9nbw4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/UaXkqRvmAkw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <br>
+  
+  <H2>Fabricator</H2>
+  <img src="PicFabber.png">
+  <img src="FabricatorCloseup.png">
+  <br>
+  The Fabber is a modular 3-axis robotic system. Various toolheads may be attached such as a CNC laser, pen, paste extruder, filament extruder, or motorized spindle.
+  <br>
+  
+  <H2>Robot Arm</H2>
+  <img src="PicArm.png">
+  <a href="https://www.thingiverse.com/thing:2861357"><img src="ServoSuction.png"></a>
+  <a href="https://www.thingiverse.com/thing:2862751"><img src="SuctionMount.png"></a><br>
+  <p>Thingiverse Links</p>
+  <ul>
+    <li><a href="https://www.thingiverse.com/thing:2861357">Servo-Driven Suction Vacuum</a></li>
+    <li><a href="https://www.thingiverse.com/thing:2862751">Arm Suction Mount</a</li>
+    <li><a href="https://www.thingiverse.com/thing:1718984">Robot Arm Design</a></li>
+    <li><a href="https://www.thingiverse.com/thing:2040526">Limit-Switch additions</a></li>
+  </ul>
+    
+  <H2>Gantry Robot</H2>
+  <img src="PicGantry.png"><BR>
+  
+  <H2>Vision System</H2>
+  <ul>
+    <li><a href="https://docs.opencv.org/3.4.0/d5/dae/tutorial_aruco_detection.html">ARUCO tags</A></li>
+    <li><a href="http://www.emgu.com/">EMGU C# wrapper for OpenCV</A></li>
+  </ul>
+  
+<H2>RAMPS system</H2>
+  The RepRap Arduino Mega Pololu Shield (RAMPS) shield attaches to an Arduino mega to enable stepper motor, limit-switch, servo, and other controls. Traditionally the RAMPS shield is used to build 3d-printers but is easily extendable to other projects.<br>
+  <ul>
+    <li><a href="http://reprap.org/wiki/RAMPS_1.4">RAMPS board</a></li>
+    <li><a href="https://www.thingiverse.com/thing:1310530">RAMPS case</a></li>
+    <li><a href="https://github.com/olikraus/u8glib">U8GLIB</a></li>
+  </ul>
+    
+  <H2>Tensorflow Inception-Model for Tool Recognition</H2>
+  <H3>Tensorflow Inception training</H3>
+  <img src="TrainingScrewdrivers.png">
+  <br>
+  <ul>
+    <li><a href="https://www.tensorflow.org/tutorials/image_retraining">Retraining custom Inception convnets</a></li>
+    <li><a href="https://github.com/migueldeicaza/TensorFlowSharp">TensorFlowSharp C# Tensorflow bindings</a></li>
+  </ul>
+  
+  
+<H2>Construction progress<H2>
+<H3>Bench</H3>
+<img src="BenchConstruction1.png">
+<img src="BenchConstruction2.png">
+<img src="BenchConstruction3.png">
+<br>
+  
+<H3>Development progress pic of software<H3>
+<img src="DevShot1.png">
+<BR>
+
+<H3>Test camera rig</H3>
+<img src="TestCam.png"><img src="ArucoMap.png"><BR>
+  The computer vision system uses a simple overhead webcam, OpenCV, and Tensorflow.. with a little custom image processing code. 
+  For basic development and testing a test rig was created for writing the integration code. This eased development and had the added benefit of having different distances and lighting conditions which helped the robustness of the final system installed to the bench.
+<BR>
+
+<H3>Print plate construction</H3>
+<img src="Plate1.png">
+<img src="Plate2.png">
+<BR>
+<H3>Maxwell Kinematic Coupler</H3>
+<img src="MaxwellKinematicCoupler.png">
+The Maxwell Kinematic Coupling helps ensure proper seating of the plates into the fabricator by the robot arm. It also prevents motion during the engraving process.<br>
+ Maxwell Kinematic Coupling: https://en.wikipedia.org/wiki/Kinematic_coupling<br>
+
+<BR>
+  
+  <H3>Autoclean Algorithm</H3>
+  <img src="Algorithm.png">
+  <br>
+  <H3>Project costs</H3>
+  <img src="Costs.png">
+  <br>
+  <br>
+  <a href="http://katascopevisuals.com/">Other projects</a><br>
+</body>
+</html>
